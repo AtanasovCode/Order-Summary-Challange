@@ -1,0 +1,175 @@
+:root {
+    --bgColor: hsl(225, 100%, 94%);
+    --bgButton: hsl(256, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: repeat;
+    background-color: var(--bgColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main {
+    width: 25vw;
+    background-color: var(--veryPaleBlue);
+    color: black;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 55vh;
+}
+
+.main-img {
+    width: 25vw;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-title {
+    font-weight: 900;
+    margin: 25px 0;
+}
+
+.sub-text {
+    font-weight: 400;
+    opacity: .6;
+}
+
+#money {
+    margin-right: 50px;
+}
+
+.change {
+    font-size: 12px;
+}
+
+.change:hover {
+    text-decoration: none;
+    color: var(--desaturatedBlue);
+}
+
+h4 {
+    font-weight: 700;
+}
+
+
+.btnProceed {
+    padding: 15px 55px;
+    background-color: var(--darkBlue);
+    color: white;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+}
+
+.btnProceed:hover {
+    background-color: var(--desaturatedBlue);
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.cancel-link {
+    color: var(--desaturatedBlue);
+    text-decoration: none;
+}
+
+.cancel-link:hover {
+    color: black;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen 
+and (min-width: 350px) 
+and (max-width: 650px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: repeat;
+    }
+    main {
+        width: 75vw;
+        overflow: hidden;
+    }
+    .text-container {
+        height: 65vh;
+        padding: 5px;
+    }
+    .main-img {
+        width: 75vw;
+    }
+}
+
+@media only screen 
+and (min-width: 651px)
+and (max-width: 900px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: repeat;
+    }
+    main {
+        width: 65vw;
+        overflow: hidden;
+    }
+    .text-container {
+        height: 55vh;
+        padding: 5px;
+    }
+    .main-img {
+        width: 65vw;
+    }
+}
+
+@media only screen 
+and (min-width: 901px)
+and (max-width: 1200px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: repeat;
+    }
+    main {
+        width: 55vw;
+        overflow: hidden;
+    }
+    .text-container {
+        height: 45vh;
+        padding: 5px;
+    }
+    .main-img {
+        width: 55vw;
+    }
+}
